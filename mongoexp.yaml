@@ -30,7 +30,7 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-root-password
-            - name: ME_CONFIG_MONGODB_PORT
+            - name: ME_CONFIG_MONGODB_SERVER
               valueFrom:
                 configMapKeyRef:
                   name: mongo-configmap
